@@ -1,0 +1,4 @@
+[target_group]
+127.0.0.1:2222
+[target_group:vars]
+ansible_ssh_private_key_file=./tmp/id_rsa
