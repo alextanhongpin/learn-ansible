@@ -40,3 +40,6 @@ setup_inventory_file:
 
 setup_ansible:
 	ansible-playbook -i "${TEMP_INVENTORY_FILE}" -vvv machine-setup.yaml
+
+ping:
+	ansible myhosts -m ping -i inventory.ini --private-key ${TEMP_DIR}/id_rsa
